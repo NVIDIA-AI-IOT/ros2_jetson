@@ -1,6 +1,19 @@
 # ROS2 Packages on NVIDIA Jetson
 
 Ease of use and deployment have made the [NVIDIA Jetson platform](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) a logical choice for developers, researchers, and manufacturers building and deploying robots.
+## ROS2 Package for Human Hand Pose Estimation
+
+The `ros2_trt_pose_hand` package is implemented based on `trt_pose_hand`, which implements a real-time hand pose estimation and gesture classification using TensorRT.
+
+[ NVIDIA-AI-IOT/ros2-trt-pose-hand GitHub Link](https://github.com/NVIDIA-AI-IOT/ros2_trt_pose_hand)
+
+Here are the key features of the `ros2_trt_pose_hand` package:
+
+* Hand Pose message with 21 key-points
+* Hand Pose detection image message
+* `std_msgs` for gesture classification with 6 classes [fist, pan, stop, fine, peace, no hand]
+* Visualization markers
+* Launch file for RViz
 
 ## ROS2 Package for Human Pose Estimation
 
