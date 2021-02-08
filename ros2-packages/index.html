@@ -222,6 +222,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ros2-package-for-human-hand-pose-estimation" class="md-nav__link">
+    ROS2 Package for Human Hand Pose Estimation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ros2-package-for-human-pose-estimation" class="md-nav__link">
     ROS2 Package for Human Pose Estimation
   </a>
@@ -337,6 +344,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#ros2-package-for-human-hand-pose-estimation" class="md-nav__link">
+    ROS2 Package for Human Hand Pose Estimation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ros2-package-for-human-pose-estimation" class="md-nav__link">
     ROS2 Package for Human Pose Estimation
   </a>
@@ -386,6 +400,17 @@
                 
                 <h1 id="ros2-packages-on-nvidia-jetson">ROS2 Packages on NVIDIA Jetson</h1>
 <p>Ease of use and deployment have made the <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/">NVIDIA Jetson platform</a> a logical choice for developers, researchers, and manufacturers building and deploying robots.</p>
+<h2 id="ros2-package-for-human-hand-pose-estimation">ROS2 Package for Human Hand Pose Estimation</h2>
+<p>The <code>ros2_trt_pose_hand</code> package is implemented based on <code>trt_pose_hand</code>, which implements a real-time hand pose estimation and gesture classification using TensorRT.</p>
+<p><a href="https://github.com/NVIDIA-AI-IOT/ros2_trt_pose_hand"> NVIDIA-AI-IOT/ros2-trt-pose-hand GitHub Link</a></p>
+<p>Here are the key features of the <code>ros2_trt_pose_hand</code> package:</p>
+<ul>
+<li>Hand Pose message with 21 key-points</li>
+<li>Hand Pose detection image message</li>
+<li><code>std_msgs</code> for gesture classification with 6 classes [fist, pan, stop, fine, peace, no hand]</li>
+<li>Visualization markers</li>
+<li>Launch file for RViz</li>
+</ul>
 <h2 id="ros2-package-for-human-pose-estimation">ROS2 Package for Human Pose Estimation</h2>
 <p>The <code>ros2_trt_pose</code> package is implemented based on <code>trt_pose</code>, which enables pose estimation on the Jetson platform. The repository provides two trained models for pose estimation using resnet18 and densenet121. To understand human pose, pretrained models infer 17 body parts based on the categories from the COCO dataset.</p>
 <p><a href="https://github.com/NVIDIA-AI-IOT/ros2_trt_pose"> NVIDIA-AI-IOT/ros2-trt-pose GitHub Link</a></p>
