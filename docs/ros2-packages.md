@@ -1,6 +1,19 @@
 # ROS2 Packages on NVIDIA Jetson
 
 Ease of use and deployment have made the [NVIDIA Jetson platform](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) a logical choice for developers, researchers, and manufacturers building and deploying robots.
+
+## ROS2 Package for Accelerated AprilTags 
+
+AprilTags is a common fiducial tag that makes it easy to derive its 6DOF pose of in a scene with only a monocular camera. These tags are used in a variety of applications in robotics such as object tracking and visual localization. The faster one can detect the pose of a tag, the faster the closed loop can be for more responsive behaviors. Native ROS2 package wraps NVIDIA's GPU-accelerated AprilTag detector for fast detection of the 36h11 tag family published as a standard TF topic.
+
+The underlying NVAprilTag library is still in development, so please validate its performance for your use cases. Feedback is appreciated.
+
+ROS2 node uses the NVIDIA GPU-accelerated AprilTags library to detect AprilTags in images and publish their poses, ids, and additional metadata. This has been tested on ROS2 (Foxy) and should run on x86_64 and aarch64 (Jetson hardware). It is modeled after and comparable to the ROS2 node for [CPU AprilTags detection](https://github.com/christianrauch/apriltag_ros.git)
+
+For more information on the Isaac GEM this node is based off of, see the [Isaac SDK 2020.2 documentation](https://docs.nvidia.com/isaac/isaac/packages/fiducials/doc/apriltags.html)
+
+For more information on AprilTags themselves, the paper and the reference CPU implementation: please check [UMICH Apriltag](https://april.eecs.umich.edu/software/apriltag.html)
+
 ## ROS2 Package for Human Hand Pose Estimation
 
 The `ros2_trt_pose_hand` package is implemented based on `trt_pose_hand`, which implements a real-time hand pose estimation and gesture classification using TensorRT.
