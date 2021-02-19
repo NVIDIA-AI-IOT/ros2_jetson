@@ -4,6 +4,8 @@ Ease of use and deployment have made the [NVIDIA Jetson platform](https://www.nv
 
 ## ROS2 Package for Accelerated AprilTags 
 
+[NVIDIA-AI-IOT/ros2-nvapriltags GitHub Link](https://github.com/NVIDIA-AI-IOT/ros2-nvapriltags)
+
 AprilTags is a common fiducial tag that makes it easy to derive its 6DOF pose of in a scene with only a monocular camera. These tags are used in a variety of applications in robotics such as object tracking and visual localization. The faster one can detect the pose of a tag, the faster the closed loop can be for more responsive behaviors. Native ROS2 package wraps NVIDIA's GPU-accelerated AprilTag detector for fast detection of the 36h11 tag family published as a standard TF topic.
 
 The underlying NVAprilTag library is still in development, so please validate its performance for your use cases. Feedback is appreciated.
