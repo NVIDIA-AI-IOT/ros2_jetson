@@ -43,6 +43,7 @@ This repository supports following docker images:
 
         "default-runtime": "nvidia"
       }
+    ```
     - Restart docker or Reboot system
     ``` $ sudo systemctl restart docker ``` <br/>
 
