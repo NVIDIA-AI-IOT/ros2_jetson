@@ -21,11 +21,11 @@ This repository supports following docker images:
 - ROS2 Eloquent with PyTorch and TensorRT <br/>
   ``` docker pull nvidiajetson/l4t-ros2-eloquent-pytorch:r32.5 ```
 - ROS2 Eloquent with DeepStream SDK <br/>
-  ``` docker pull nvidiajetson/deepstream-ros2-eloquent-pytorch:5.0.1 ```
+  ``` docker pull nvidiajetson/deepstream-ros2-eloquent:5.0.1 ```
 - ROS2 Foxy with PyTorch and TensorRT <br/>
   ``` docker pull nvidiajetson/l4t-ros2-foxy-pytorch:r32.5 ```
 - ROS2 Foxy with DeepStream SDK <br/>
-  ``` docker pull nvidiajetson/deepstream-ros2-foxy-pytorch:5.0.1 ```
+  ``` docker pull nvidiajetson/deepstream-ros2-foxy:5.0.1 ```
 
 ## Build docker images using DockerFiles:
 
