@@ -12,22 +12,18 @@ BASE_IMAGE=$2
 
 JP_release=r32.5
 DS_release=5.0.1
-echo $BASE_IMAGE
+if [ "$ROS_DISTRO" = "foxy" ] || [ "$ROS_DISTRO" = "eloquent" ]; then
+    ROS_VERSION=ros2
+  else
+    ROS_VERSION=ros
+fi
+
+echo "Creating Docker Image for $BASE_IMAGE $ROS_VERSION:$ROS_DISTRO"
 
 if [ "$BASE_IMAGE" = "deepstream" ]; then
-	if [ "$ROS_DISTRO" = "foxy" ] || [ "$ROS_DISTRO" = "eloquent" ]; then
-    ROS_VERSION=ros2
-  else
-    ROS_VERSION=ros
-  fi
-	sudo docker build -t deepstream-$ROS_VERSION-$ROS_DISTRO:$DS_release -f DockerFile.$BASE_IMAGE.ROS.$ROS_DISTRO .
+	sudo docker build -t deepstream-$ROS_VERSION-$ROS_DISTRO:$DS_release -f DockerFile.$BASE_IMAGE.$ROS_VERSION.$ROS_DISTRO .
 elif [ "$BASE_IMAGE" = "l4tbase" ]; then
-  if [ "$ROS_DISTRO" = "foxy" ] || [ "$ROS_DISTRO" = "eloquent" ]; then
-    ROS_VERSION=ros2
-  else
-    ROS_VERSION=ros
-  fi
-	sudo docker build -t l4t-$ROS_VERSION-$ROS_DISTRO-pytorch:$JP_release -f DockerFile.$BASE_IMAGE.ROS.$ROS_DISTRO .
+	sudo docker build -t l4t-$ROS_VERSION-$ROS_DISTRO-pytorch:$JP_release -f DockerFile.$BASE_IMAGE.$ROS_VERSION.$ROS_DISTRO .
 else
 	echo "2nd Arguement needs to be deepstream or l4tbase"
 fi
