@@ -3,6 +3,7 @@
 This page provides blogs published by NVIDIA for ROS/ROS2 Support on NVIDIA Jetson developer kits.
 
 ## Blogs
+* [Training Your NVIDIA JetBot to Avoid Collisions Using NVIDIA Isaac Sim](https://developer.nvidia.com/blog/training-your-nvidia-jetbot-to-avoid-collisions-using-nvidia-isaac-sim/)
 * [Implementing Robotics Applications with ROS 2 and AI on the NVIDIA Jetson Platform
 ](https://developer.nvidia.com/blog/implementing-robotics-applications-with-ros-2-and-ai-on-jetson-platform-2/)
 * [Use CUDA PCL 1.0 to accelerate Jetson's point cloud processing](https://developer.nvidia.com/zh-cn/blog/cuda-pcl-1-0-jetson/)
