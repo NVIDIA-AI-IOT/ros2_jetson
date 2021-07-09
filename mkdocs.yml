@@ -7,8 +7,9 @@ theme:
         secondary: light green
 nav:
     - Home: 'index.md'
-    - ROS2_packages : 'ros2-packages.md'
-    - Libraries : 'libraries.md'
+    - Packages : 'ros2-packages.md'
     - Containers : 'ros2-jetson-dockers.md'
+    - Simulation : 'ros2-omniverse.md'
+    - Libraries : 'libraries.md'
     - Blogs : 'blogs.md'
 

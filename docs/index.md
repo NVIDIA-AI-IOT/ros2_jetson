@@ -3,8 +3,9 @@
 This page enumerates all the new updates for ROS2 including 
 
 * AI ROS2 packages
+* Docker containers
+* NVIDIA Omniverse Isaac Sim support
 * Cuda library support
-* Docker containers, 
 * Blogs and presentation slides 
 
  many more things coming along!!

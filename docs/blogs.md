@@ -3,6 +3,7 @@
 This page provides blogs published by NVIDIA for ROS/ROS2 Support on NVIDIA Jetson developer kits.
 
 ## Blogs
+* [Accelerating AI Modules for ROS and ROS 2 on NVIDIA Jetson Platform](https://developer.nvidia.com/blog/accelerating-ai-modules-for-ros-and-ros-2-on-jetson/)
 * [Training Your NVIDIA JetBot to Avoid Collisions Using NVIDIA Isaac Sim](https://developer.nvidia.com/blog/training-your-nvidia-jetbot-to-avoid-collisions-using-nvidia-isaac-sim/)
 * [Implementing Robotics Applications with ROS 2 and AI on the NVIDIA Jetson Platform
 ](https://developer.nvidia.com/blog/implementing-robotics-applications-with-ros-2-and-ai-on-jetson-platform-2/)
