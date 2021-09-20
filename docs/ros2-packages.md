@@ -2,6 +2,20 @@
 
 Ease of use and deployment have made the [NVIDIA Jetson platform](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) a logical choice for developers, researchers, and manufacturers building and deploying robots.
 
+## ROS2: Isaac ROS image\_pipeline
+
+[NVIDIA-AI-IOT/isaac-ros-image-pipeline](https://github.com/NVIDIA-AI-IOT/isaac_ros_image_pipeline)
+
+This metapackage offers similar functionality as the standard, CPU-based [image\_pipeline metapackage](http://wiki.ros.org/image_pipeline), but does so by leveraging the Jetson platform's specialized computer vision hardware. Considerable effort has been made to ensure that replacing image\_pipeline with isaac\_ros\_image\_pipeline on a Jetson device is as painless a transition as possible.
+
+## ROS2: Isaac ROS Common
+
+[NVIDIA-AI-IOT/isaac-ros-common](https://github.com/NVIDIA-AI-IOT/isaac_ros_common)
+
+Isaac ROS common utilities for use in conjunction with the Isaac ROS suite of packages. <br/>
+Note: Please refer to scripts/README.md for script used to setup dev environment.
+
+
 ## ROS2 Package for Accelerated AprilTags 
 
 [NVIDIA-AI-IOT/ros2-nvapriltags GitHub Link](https://github.com/NVIDIA-AI-IOT/ros2-nvapriltags)
