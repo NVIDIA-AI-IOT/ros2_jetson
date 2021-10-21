@@ -2,15 +2,42 @@
 
 Ease of use and deployment have made the [NVIDIA Jetson platform](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) a logical choice for developers, researchers, and manufacturers building and deploying robots.
 
+## ROS2: Isaac ROS DNN Inference
+
+[NVIDIA-ISAAC-ROS/isaac\_ros\_dnn\_inference](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_dnn_inference)
+
+This repository provides two NVIDIA GPU-accelerated ROS2 nodes that perform deep learning inference using custom models. One node uses the TensorRT SDK, while the other uses the Triton SDK.
+
+TensorRT is a library that enables faster inference on NVIDIA GPUs; it provides an API for the user to load and execute inference with their own models. The TensorRT ROS2 node in this package integrates this TensorRT API directly, so there is no need to make any calls to or directly use TensorRT SDK. Instead, users simply configure the TensorRT node with their own custom models and parameters, and the node will make the necessary TensorRT API calls to load and execute the model. For further documentation on TensorRT, refer to their main page [here](https://developer.nvidia.com/tensorrt).
+
+Triton is a framework that brings up a generic inference server that a user can configure with a model repository, which is a collection of various types of models (e.g.) ONNX Runtime, TensorRT Engine Plan, TensorFlow, PyTorch). A brief tutorial on how to set up a model repository is included below, and further documentation on Triton is also available at the [Triton GitHub](https://github.com/triton-inference-server/server).
+
+
+## ROS2: Isaac ROS Visual Odometry
+
+[NVIDIA-ISAAC-ROS/isaac\_ros\_visual\_odometry](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_odometry)
+
+This repository provides a ROS2 package that estimates stereo visual inertial odometry using the [Isaac Elbrus](https://docs.nvidia.com/isaac/isaac/packages/visual_slam/doc/elbrus_visual_slam.html) GPU-accelerated library. It takes in a time synced pair of stereo images (grayscale) along with respective camera intrinsics to publish the current pose of the camera relative to its start pose. This has been tested on ROS2 (Foxy) and should build and run on x86\_64 and aarch64 (Jetson).
+
+## ROS2: Isaac ROS Argus Camera
+
+[NVIDIA-ISAAC-ROS/isaac\_ros\_argus\_camera](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_argus_camera)
+
+This repository provides monocular and stereo nodes that enable ROS developers to use cameras connected to Jetson platforms over a CSI interface. The nodes internally use libargus, which is an API for acquiring images and associated metadata from camera devices.
+
+[Libargus API reference](https://docs.nvidia.com/jetson/l4t-multimedia/group__LibargusAPI.html)
+
+This package is compatible with ROS2 Foxy and has been tested on the Jetson platfrom with off-the-shelf cameras from NVIDIA partners(see the Reference Camera section for more details). Note: x86\_64 is not supported.
+
 ## ROS2: Isaac ROS image\_pipeline
 
-[NVIDIA-AI-IOT/isaac-ros-image-pipeline](https://github.com/NVIDIA-AI-IOT/isaac_ros_image_pipeline)
+[NVIDIA-ISAAC-ROS/isaac-ros-image-pipeline](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_image_pipeline)
 
 This metapackage offers similar functionality as the standard, CPU-based [image\_pipeline metapackage](http://wiki.ros.org/image_pipeline), but does so by leveraging the Jetson platform's specialized computer vision hardware. Considerable effort has been made to ensure that replacing image\_pipeline with isaac\_ros\_image\_pipeline on a Jetson device is as painless a transition as possible.
 
 ## ROS2: Isaac ROS Common
 
-[NVIDIA-AI-IOT/isaac-ros-common](https://github.com/NVIDIA-AI-IOT/isaac_ros_common)
+[NVIDIA-ISAAC-ROS/isaac-ros-common](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common)
 
 Isaac ROS common utilities for use in conjunction with the Isaac ROS suite of packages. <br/>
 Note: Please refer to scripts/README.md for script used to setup dev environment.
@@ -18,7 +45,7 @@ Note: Please refer to scripts/README.md for script used to setup dev environment
 
 ## ROS2 Package for Accelerated AprilTags 
 
-[NVIDIA-AI-IOT/ros2-nvapriltags GitHub Link](https://github.com/NVIDIA-AI-IOT/ros2-nvapriltags)
+[NVIDIA-ISAAC-ROS/ros2-nvapriltags GitHub Link](https://github.com/NVIDIA-ISAAC-ROS/ros2-nvapriltags)
 
 AprilTags is a common fiducial tag that makes it easy to derive its 6DOF pose of in a scene with only a monocular camera. These tags are used in a variety of applications in robotics such as object tracking and visual localization. The faster one can detect the pose of a tag, the faster the closed loop can be for more responsive behaviors. Native ROS2 package wraps NVIDIA's GPU-accelerated AprilTag detector for fast detection of the 36h11 tag family published as a standard TF topic.
 
