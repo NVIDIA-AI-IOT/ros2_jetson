@@ -521,7 +521,7 @@
 <p>Isaac ROS common utilities for use in conjunction with the Isaac ROS suite of packages. <br/>
 Note: Please refer to scripts/README.md for script used to setup dev environment.</p>
 <h2 id="ros2-package-for-accelerated-apriltags">ROS2 Package for Accelerated AprilTags</h2>
-<p><a href="https://github.com/NVIDIA-ISAAC-ROS/ros2-nvapriltags">NVIDIA-ISAAC-ROS/ros2-nvapriltags GitHub Link</a></p>
+<p><a href="https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_apriltag">NVIDIA-ISAAC-ROS/ros2-nvapriltags GitHub Link</a></p>
 <p>AprilTags is a common fiducial tag that makes it easy to derive its 6DOF pose of in a scene with only a monocular camera. These tags are used in a variety of applications in robotics such as object tracking and visual localization. The faster one can detect the pose of a tag, the faster the closed loop can be for more responsive behaviors. Native ROS2 package wraps NVIDIA's GPU-accelerated AprilTag detector for fast detection of the 36h11 tag family published as a standard TF topic.</p>
 <p>The underlying NVAprilTag library is still in development, so please validate its performance for your use cases. Feedback is appreciated.</p>
 <p>ROS2 node uses the NVIDIA GPU-accelerated AprilTags library to detect AprilTags in images and publish their poses, ids, and additional metadata. This has been tested on ROS2 (Foxy) and should run on x86_64 and aarch64 (Jetson hardware). It is modeled after and comparable to the ROS2 node for <a href="https://github.com/christianrauch/apriltag_ros.git">CPU AprilTags detection</a></p>
